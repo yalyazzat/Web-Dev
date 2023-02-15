@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To do list</title>
+        <link rel="stylesheet" href="C:\Users\D.C.COM\Downloads\.vscode\htmal\lab3\todo\index.css">
+    </head>
+    <body>
+        <script src="C:\Users\D.C.COM\Downloads\.vscode\htmal\lab3\todo\index.js"></script>
+        <h1>TO DO List</h1>
+        <div class="line">
+            <p><input id='add.text' class="tex" type='text' placeholder='enter task ...'></p>
+            <p><input type='button' class="a" value='Add' onclick='add()'></p>
+        </div>
+
+    <hr>
+        <ul id='tasks' class="tasks">
+            <li><input type='button' value='&#x2713' onclick='tick(this.parentNode)' id='tick' class='class1'/>listening nct
+                <input type='button' value='&#x2715' onclick='delte(this.parentNode)' class='todo' id='delete'/>
+            </li>
+        </ul>
+    </body>
+</html>

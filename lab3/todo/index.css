@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+
+body{
+    width:100%;
+    background-color: #ffffff;
+}
+
+h1{
+    margin-left: 240px;
+}
+.a{
+    background-color: rgb(154, 172, 248);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 320px;
+    margin-top: 20px;
+}
+
+.line{
+    display: flex;
+}
+
+.tex{
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.tasks{
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 25x;
+}
+
+.class1{
+    padding: 10px;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.todo{
+    padding: 10px;
+    background-color: rgb(255, 44, 44);
+    border: none;
+    border-radius: 5px;
+    margin-left: 400px;
+}
+
+li:active{
+    text-decoration: line-through;
+}

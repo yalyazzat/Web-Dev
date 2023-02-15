@@ -1,18 +1,24 @@
-let input = document.querySelector('#input')
-let addTsk = document.querySelector('#add')
-let list = document.querySelector('#list')
+// let input = document.querySelector('#input')
+// let addTsk = document.querySelector('#add')
+// let list = document.querySelector('#list')
 
-addTsk.addEventListener('click', function(){
-    if(input.value === '') return
-    add()
-    input.value = ''
-})
-
+      var item = document.createElement("li");
 function add(){
-    const li = document.createElement('li')
+    var element = document.getElementById('add.text');
+    var text = element.value;
+    if (text != ""){
+      item.innerHTML = '<input type="button" value="&#x2713" onclick="tick(this.parentNode)" id="tick" class="class1"/> ' + text +'<input type="button" value="&#x2715" onclick="delte(this.parentNode)" class="todo" id="delete"/>';
+      var x = document.getElementById('tasks');
+      x.appendChild(item);
+    }
+    element.value = "";
+}
+function delte(item){
+  if (item.className == 'done'){
+    item.remove();
+  }
+}
 
-    list.appendChild(li)
-    li.textContent = input.value
-
-
+function tick(item){
+  item.className = 'done';
 }
